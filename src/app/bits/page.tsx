@@ -37,7 +37,7 @@ const Bits = () => {
                 key={type}
                 onClick={() => handleFilterChange(type)}
                 className={`px-4 py-1 text-sm font-bold cursor-pointer ${filter === type
-                  ? 'bg-zinc-700 border-2 border-current text-zinc-300 dark:bg-zinc-200 dark:text-zinc-900'
+                  ? 'bg-zinc-900 border-2 border-current text-zinc-300 dark:bg-zinc-300 dark:text-zinc-900'
                   : 'text-zinc-900 dark:text-zinc-300'
                   }`}
               >
@@ -67,7 +67,7 @@ const Bits = () => {
             ))
           ) : (
             <div className="py-10 flex items-center justify-center opacity-50 font-mono text-sm">
-              [ nothing found in this sector ]
+              [ nothing found here ]
             </div>
           )}
         </section>
@@ -97,6 +97,14 @@ const Bits = () => {
             </button>
           </footer>
         )}
+
+        <Link
+          href="https://medium.com/@parthesh28" 
+          target="_blank"
+          className="block text-center mt-8 sm:mt-6 text-xs sm:text-sm font-bold font-mono"
+        >
+          [ visit medium ]
+        </Link>
       </div>
     </main>
   );
